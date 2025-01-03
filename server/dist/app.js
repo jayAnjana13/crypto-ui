@@ -37,3 +37,7 @@ mongoose_1.default
     .catch(function () {
     throw (0, http_errors_1.default)(501, "Unable to connect database");
 });
+
+app.get("/", (req, res) => {
+  res.send("API Working");
+});
